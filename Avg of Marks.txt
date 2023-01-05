@@ -1,0 +1,19 @@
+<?php
+echo "Average of marks<br>";
+function avgMarks($arrmarks){
+    $sum = 0;
+    $i = 1;
+    foreach($arrmarks as $value){
+        $sum += $value;
+        $i ++ ;
+    }
+    return $sum / $i;
+}
+$geetansh = [98, 91, 93, 89, 96];
+$summarks = avgMarks($geetansh);
+
+$prats = [91, 88, 78, 99, 84];
+$summarksprats = avgMarks($prats);
+echo " The Total marks Scored by Geetansh is $summarks<br>";
+echo " The Total marks Scored by prats is $summarksprats<br>";
+?>
