@@ -1,0 +1,19 @@
+
+<?php
+echo " Sum of Marks<br>";
+
+function processMarks($marksarr){
+    $sum = 0;
+    foreach($marksarr as $value){
+        $sum += $value;
+    }
+    return $sum;
+}
+$geetansh = [98, 91, 93, 89, 96];
+$summarks = processMarks($geetansh);
+
+$prats = [91, 88, 78, 99, 84];
+$summarksprats = processMarks($prats);
+echo " The Total marks Scored by Geetansh is $summarks<br>";
+echo " The Total marks Scored by prats is $summarksprats<br>";
+?>
