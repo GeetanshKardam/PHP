@@ -1,0 +1,31 @@
+<?php
+
+
+$multidim = array(array(8,5),array(2,3));
+$multidimm = array(array(9,5),array(1,2));
+
+echo"Array First <br>";
+for ($i=0; $i<count($multidim); $i++){
+     for ($j=0; $j<count($multidim[$i]); $j++){
+     echo $multidim[$i][$j];
+     echo"  ";
+     }
+     echo"<br>";
+    }
+echo"Array Second <br>";
+for ($i=0; $i<count($multidimm); $i++){
+     for ($j=0; $j<count($multidimm[$i]); $j++){
+     echo $multidimm[$i][$j];
+     echo"  ";
+     }
+    echo"<br>";
+}
+echo"Addition of Matrix is: <br>";
+for ($i=0; $i<2; $i++){
+    for ($j=0; $j<2; $j++)
+    echo " ".$multidim[$i][$j]+$multidimm[$i][$j]." ";
+    echo "<br>";
+    
+}
+
+?>
